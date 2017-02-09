@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/FlyOutContent"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#FFFFFF">
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/frameLayout1"
+        android:background="#333333">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/linearLayout1">
+            <TextView
+                android:text="Store-Receiving &gt; Box List"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:id="@+id/textView2"
+                android:gravity="center"
+                android:textColor="#fff6f6f6"
+                android:layout_marginLeft="8dp" />
+        </LinearLayout>
+    </FrameLayout>
+    <TableLayout
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:id="@+id/TableLayout1">
+        <TableRow>
+            <Button
+                android:text="DONE"
+                android:id="@+id/btnDone"
+                android:textSize="18dp"
+                android:textColor="#ffffffff"
+                android:textStyle="bold"
+                android:background="@drawable/ButtonStyle"
+                android:layout_width="143.0dp"
+                android:layout_height="50dp"
+                android:layout_column="0" />
+        </TableRow>
+    </TableLayout>
+    <TableLayout
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="50.0dp"
+        android:padding="5dp"
+        android:id="@+id/TableLayout2">
+        <TableRow>
+            <TextView
+                android:id="@+id/lblPo"
+                android:text="MTS Number :"
+                android:textSize="18sp"
+                android:textColor="#ff807979"
+                android:textStyle="normal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="1dp"
+                android:gravity="right" />
+            <EditText
+                android:id="@+id/txtloadnumber"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_width="181.5dp"
+                android:layout_height="40dp"
+                android:background="@drawable/EditTextStyle"
+                android:editable="false"
+                android:gravity="center"
+                android:layout_marginLeft="2.5dp"
+                android:textStyle="bold" />
+        </TableRow>
+    </TableLayout>
+    <TableRow
+        android:id="@+id/tableRow4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="3dp"
+        android:layout_marginLeft="5dp">
+        <EditText
+            android:id="@+id/txtsearch"
+            android:drawableLeft="@drawable/searchbutton"
+            android:layout_width="189.0dp"
+            android:layout_height="wrap_content"
+            android:hint="Search Box Number"
+            android:ems="10"
+            android:textColor="#000000"
+            android:background="#ffffff"
+            android:layout_marginTop="8dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:inputType="text" />
+        <Button
+            android:text="Scan Box"
+            android:id="@+id/btnScanBox"
+            android:textSize="18dp"
+            android:textColor="#ffe1f5fe"
+            android:textStyle="bold"
+            android:background="@drawable/ButtonStyle"
+            android:layout_width="111.5dp"
+            android:layout_height="45dp"
+            android:gravity="center" />
+        <EditText
+            android:id="@+id/txtScanUpc"
+            android:layout_width="0dp"
+            android:layout_height="20dp" />
+    </TableRow>
+    <HorizontalScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="left"
+        android:fillViewport="true"
+        android:scrollbars="horizontal|vertical">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TableLayout
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:minWidth="25dp"
+                android:minHeight="25dp"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal">
+                <TableRow
+                    android:layout_width="329.5dp"
+                    android:background="#ffffff"
+                    android:layout_height="14.5dp">
+                    <TextView
+                        android:text="Box Number"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/lblSKU"
+                        android:textColor="#ff807979"
+                        android:textStyle="bold"
+                        android:paddingLeft="5dp"
+                        android:textSize="18sp"
+                        android:background="@drawable/TextBorder" />
+                    <TextView
+                        android:text="Remark"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/lblSKU"
+                        android:textColor="#ff807979"
+                        android:textStyle="bold"
+                        android:paddingLeft="5dp"
+                        android:textSize="18sp"
+                        android:background="@drawable/TextBorder" />
+                </TableRow>
+            </TableLayout>
+            <ListView
+                android:id="@+id/lvBox"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:divider="#FFCC00"
+                android:layout_weight="1" />
+        </LinearLayout>
+    </HorizontalScrollView>
+</LinearLayout>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fafafa"
+    android:minWidth="25px"
+    android:minHeight="25px"
+    android:paddingLeft="5dp">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="311.5dp"
+        android:layout_height="match_parent"
+        android:id="@+id/linearLayout1"
+        android:descendantFocusability="blocksDescendants">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="210dp"
+            android:layout_height="match_parent"
+            android:id="@+id/linearLayout2"
+            android:background="@drawable/textborder">
+            <TextView
+                android:text="upc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtupc"
+                android:textStyle="bold"
+                android:gravity="left"
+                android:paddingLeft="3dp"
+                android:textSize="18dp"
+                android:textColor="#ff000000" />
+            <TextView
+                android:text="descr"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtdescr"
+                android:paddingLeft="3dp"
+                android:textSize="15dp"
+                android:textColor="#ff362f2f" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:id="@+id/linearLayout3"
+            android:gravity="center"
+            android:background="@drawable/textborder">
+            <TextView
+                android:text="sdfsdf"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtqty"
+                android:layout_gravity="center"
+                android:textAlignment="center"
+                android:gravity="center"
+                android:textSize="18dp"
+                android:textColor="#ff000000" />
+            <ImageButton
+                android:layout_width="82.5dp"
+                android:layout_height="38.0dp"
+                android:id="@+id/imgbtnqtyminus"
+                android:src="@drawable/btnminus"
+                android:textAlignment="center" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

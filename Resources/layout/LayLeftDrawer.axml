@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="200dp"
+    android:layout_height="fill_parent"
+    android:background="#333333"
+    android:id="@+id/FlyOutMenu"
+    android:minWidth="25px"
+    android:minHeight="25px">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="200dp"
+        android:layout_height="fill_parent"
+        android:background="#333333"
+        android:id="@+id/linearLayout2">
+        <TextView
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_width="match_parent"
+            android:layout_height="57.0dp"
+            android:id="@+id/textView1"
+            android:textColor="#ffc1c1c1"
+            android:textStyle="bold"
+            android:padding="4dp"
+            android:background="@drawable/RSCI_ORIGINAL"
+            android:layout_marginBottom="3dp" />
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/linearLayout1"
+            android:layout_marginBottom="4dp">
+            <TableLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tableLayout1">
+                <TableRow
+                    android:id="@+id/tableRow1">
+                    <TextView
+                        android:text=" Piler Name"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:layout_width="140.0dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/MenuPilerName"
+                        android:textColor="#ffc1c1c1"
+                        android:padding="4dp"
+                        android:drawableLeft="@drawable/logouser"
+                        android:gravity="center_vertical" />
+                </TableRow>
+            </TableLayout>
+        </LinearLayout>
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="3dp"
+            android:id="@+id/view2"
+            android:background="#abe4e4e4"
+            android:layout_gravity="center"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="14dp"
+            android:layout_marginBottom="1dp" />
+        <TableLayout
+            android:id="@+id/tableLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TableRow
+                android:id="@+id/tableRow1">
+                <TextView
+                    android:text="  Receiving"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:layout_width="178.5dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/MenuReceiving"
+                    android:textColor="#ffc1c1c1"
+                    android:padding="4dp"
+                    android:drawableLeft="@drawable/LogoStockTransferReceiving"
+                    android:gravity="center_vertical" />
+            </TableRow>
+        </TableLayout>
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:id="@+id/view2"
+            android:background="#abe4e4e4"
+            android:layout_gravity="center"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="14dp"
+            android:layout_marginBottom="8dp" />
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/linearLayout1"
+            android:layout_marginBottom="4dp">
+            <TableLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tableLayout3">
+                <TableRow
+                    android:id="@+id/tableRow2">
+                    <TextView
+                        android:text="  Log out"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:layout_width="168.0dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/MenuLogout"
+                        android:textColor="#ffc1c1c1"
+                        android:padding="4dp"
+                        android:clickable="true"
+                        android:drawableLeft="@drawable/logologout"
+                        android:gravity="center_vertical" />
+                </TableRow>
+            </TableLayout>
+        </LinearLayout>
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:id="@+id/view2"
+            android:background="#abe4e4e4"
+            android:layout_gravity="center"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="14dp"
+            android:layout_marginBottom="8dp" />
+    </LinearLayout>
+</ScrollView>

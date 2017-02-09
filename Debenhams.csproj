@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectTypeGuids>{EFBA0AD7-5A72-4C68-AF49-83D382785DCF};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <ProjectGuid>{40E2C60D-F1FB-44EA-A8EA-A3C1C3F4DC03}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Debenhams</RootNamespace>
+    <AndroidApplication>True</AndroidApplication>
+    <AndroidResgenFile>Resources\Resource.designer.cs</AndroidResgenFile>
+    <AndroidResgenClass>Resource</AndroidResgenClass>
+    <MonoAndroidResourcePrefix>Resources</MonoAndroidResourcePrefix>
+    <MonoAndroidAssetsPrefix>Assets</MonoAndroidAssetsPrefix>
+    <AndroidUseLatestPlatformSdk>False</AndroidUseLatestPlatformSdk>
+    <AssemblyName>Debenhams</AssemblyName>
+    <AndroidManifest>Properties\AndroidManifest.xml</AndroidManifest>
+    <TargetFrameworkVersion>v4.4</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <AndroidLinkMode>None</AndroidLinkMode>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <AndroidUseSharedRuntime>false</AndroidUseSharedRuntime>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="Mono.Android" />
+    <Reference Include="System.Data" />
+    <Reference Include="Mono.Data.Sqlite" />
+    <Reference Include="System.Json" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="Xamarin.Android.Support.v4">
+      <HintPath>..\packages\Xamarin.Android.Support.v4.23.1.1.1\lib\MonoAndroid403\Xamarin.Android.Support.v4.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Resources\Resource.designer.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Models\table.cs" />
+    <Compile Include="SQLite.cs" />
+    <Compile Include="DataAccess\SQLiteHelper.cs" />
+    <Compile Include="DataAccess\WMSApplication.cs" />
+    <Compile Include="DataAccess\WMSDatabase.cs" />
+    <Compile Include="Activities\ActStart.cs" />
+    <Compile Include="Activities\ActLogin.cs" />
+    <Compile Include="Activities\ActLeftDrawer.cs" />
+    <Compile Include="ApiConnection\ApiConnection.cs" />
+    <Compile Include="DataAccess\ItemRepository.cs" />
+    <Compile Include="Activities\ActLoadList.cs" />
+    <Compile Include="Adapter\AdpLoadList.cs" />
+    <Compile Include="DataAccess\IItemRepository.cs" />
+    <Compile Include="DataAccess\OrmItemRepository.cs" />
+    <Compile Include="Activities\ActLoadListDetail.cs" />
+    <Compile Include="Adapter\AdpLoadListDetail.cs" />
+    <Compile Include="Activities\ActLoadScanUpc.cs" />
+    <Compile Include="Adapter\AdpLoadUpc.cs" />
+    <Compile Include="Activities\ActLoadListBox.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AboutResources.txt" />
+    <None Include="Properties\AndroidManifest.xml" />
+    <None Include="Assets\AboutAssets.txt" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\values\Strings.xml" />
+    <AndroidResource Include="Resources\mipmap-hdpi\Icon.png" />
+    <AndroidResource Include="Resources\mipmap-mdpi\Icon.png" />
+    <AndroidResource Include="Resources\mipmap-xhdpi\Icon.png" />
+    <AndroidResource Include="Resources\mipmap-xxhdpi\Icon.png" />
+    <AndroidResource Include="Resources\mipmap-xxxhdpi\Icon.png" />
+    <AndroidResource Include="Resources\drawable\action_menu.png" />
+    <AndroidResource Include="Resources\drawable\searchbutton.png" />
+    <AndroidResource Include="Resources\drawable\TextBorder.xml" />
+    <AndroidResource Include="Resources\layout\Main.axml" />
+    <AndroidResource Include="Resources\drawable\ButtonStyle.xml" />
+    <AndroidResource Include="Resources\drawable\EditableTextStyle.xml" />
+    <AndroidResource Include="Resources\drawable\EditTextStyle.xml" />
+    <AndroidResource Include="Resources\drawable\passwordloginbutton.png" />
+    <AndroidResource Include="Resources\drawable\userloginbutton.png" />
+    <AndroidResource Include="Resources\layout\LayLogin.axml" />
+    <AndroidResource Include="Resources\layout\LayStart.axml" />
+    <AndroidResource Include="Resources\drawable\debenhams.jpg" />
+    <AndroidResource Include="Resources\layout\LayLeftDrawer.axml" />
+    <AndroidResource Include="Resources\drawable\warning.ico" />
+    <AndroidResource Include="Resources\layout\LayInputURL.axml" />
+    <AndroidResource Include="Resources\drawable\TextBorderBotton.axml" />
+    <AndroidResource Include="Resources\drawable\TextSmall.axml" />
+    <AndroidResource Include="Resources\layout\LayInputDATE.axml" />
+    <AndroidResource Include="Resources\drawable\date.png" />
+    <AndroidResource Include="Resources\drawable\shop.png" />
+    <AndroidResource Include="Resources\drawable\TextBorderCurve.axml" />
+    <AndroidResource Include="Resources\drawable\btnminus.png" />
+    <AndroidResource Include="Resources\drawable\refresh.png" />
+    <AndroidResource Include="Resources\layout\LayLoadList.axml" />
+    <AndroidResource Include="Resources\layout\LayLoadListC.axml" />
+    <AndroidResource Include="Resources\layout\LayLoadLists.axml" />
+    <AndroidResource Include="Resources\layout\LayLoadListsDetail.axml" />
+    <AndroidResource Include="Resources\layout\LayLoadListsDetails.axml" />
+    <AndroidResource Include="Resources\layout\LayLoadScanUpc.axml" />
+    <AndroidResource Include="Resources\layout\LayLoadScanUpcs.axml" />
+    <AndroidResource Include="Resources\drawable\LogoLogOut.png" />
+    <AndroidResource Include="Resources\drawable\LogoReceiving.png" />
+    <AndroidResource Include="Resources\drawable\LogoUser.png" />
+    <AndroidResource Include="Resources\drawable\LogoDebenhamsMenu.jpg" />
+    <AndroidResource Include="Resources\drawable\RSCI_APP_LOGO.png" />
+    <AndroidResource Include="Resources\drawable\LogoStockTransferReceiving.png" />
+    <AndroidResource Include="Resources\drawable\RSCI_ORIGINAL.png" />
+    <AndroidResource Include="Resources\drawable\rscistore.png" />
+    <AndroidResource Include="Resources\drawable\RSCI_ORIGINALStore.png" />
+    <AndroidResource Include="Resources\layout\LayInputCredential.axml" />
+    <AndroidResource Include="Resources\layout\LayInputUpc.axml" />
+    <AndroidResource Include="Resources\layout\LayLoadListBox.axml" />
+    <AndroidResource Include="Resources\layout\LayLoadListBoxs.axml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Resources\drawable\" />
+    <Folder Include="Models\" />
+    <Folder Include="Activities\" />
+    <Folder Include="Adapter\" />
+    <Folder Include="ApiConnection\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
+  <ItemGroup>
+    <AndroidAsset Include="Assets\DebenhamsDB" />
+  </ItemGroup>
+  <ItemGroup>
+    <XamarinComponentReference Include="xamandroidsupportv4-18">
+      <Version>23.1.1.1</Version>
+      <Visible>False</Visible>
+    </XamarinComponentReference>
+  </ItemGroup>
+</Project>

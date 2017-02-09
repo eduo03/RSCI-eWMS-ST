@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="40.5dp"
+        android:id="@+id/linearLayout7"
+        android:layout_marginLeft="5dp"
+        android:layout_marginBottom="2dp"
+        android:layout_marginTop="5dp">
+        <TextView
+            android:text="UPC :"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_width="85.0dp"
+            android:layout_height="23.0dp"
+            android:id="@+id/textView1"
+            android:textColor="#ff807979"
+            android:gravity="right"
+            android:layout_marginRight="1dp" />
+        <EditText
+            android:layout_width="210dp"
+            android:layout_height="40dp"
+            android:id="@+id/txtupc"
+            android:textStyle="bold"
+            android:layout_marginLeft="3dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="40.5dp"
+        android:id="@+id/linearLayout7"
+        android:layout_marginLeft="5dp"
+        android:layout_marginBottom="5dp">
+        <TextView
+            android:text="Quantity:"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_width="85.0dp"
+            android:layout_height="23.0dp"
+            android:id="@+id/textView1"
+            android:textColor="#ff807979"
+            android:gravity="right"
+            android:layout_marginRight="1dp" />
+        <EditText
+            android:layout_width="210dp"
+            android:layout_height="40dp"
+            android:id="@+id/txtqty"
+            android:editable="true"
+            android:textStyle="bold"
+            android:layout_marginLeft="3dp"
+            android:phoneNumber="true" />
+    </LinearLayout>
+</LinearLayout>
